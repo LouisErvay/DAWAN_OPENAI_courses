@@ -20,10 +20,10 @@ def generate_article_with_titles(topic):
 
 def generate_image(topic):
     response = client.images.generate(
-        model="dall-e-2",
+        model="dall-e-3",
         prompt=f"A visually appealing and relevant image about {topic}",
         n=1,
-        size="256x256"
+        size="1024x1024"
     )
     return response.data[0].url
 
